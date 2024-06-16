@@ -24,6 +24,10 @@ else
   p "good to go!"
 end
 
+# ANSWER - The code is correct, just take out else p "good to go!"
+# and change last elsif to else. The user has to enter what the weather is.
+# Changing the variable weather will display the corresponding puts values.
+
 # Experiment with manipulating the value held in variable 'weather'
 # to print something other than 'sunscreen'
 
@@ -43,9 +47,11 @@ end
 
 num_quarters = 0
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
-
+if num_quarters != 0
+  puts "I have enough money for a gumball"
+else
+  puts "I don't have enough money for a gumball"
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -63,3 +69,13 @@ puts "I don't have enough money for a gumball"
 
 cups_of_flour = 1
 has_sauce = true
+
+if cups_of_flour = 1 && has_sauce
+  puts "I cannot make pizza"
+elsif cups_of_flour = 5 && has_sauce = false
+  puts "I cannot make pizza"
+elsif cups_of_flour = 2 && has_sauce = true
+  puts "I can make pizza"
+else cups_of_flour = 3 && has_sauce = true
+  puts "I can make pizza"
+end
